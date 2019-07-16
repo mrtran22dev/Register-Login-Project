@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Expressway';
+    src: url('expressway rg.ttf') format('truetype');
+} 
+
+body {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background-image: url("stars.jpg"); 
+    background-size: 100%; 
+    font-family: 'Expressway';
+}
+
+.login {
+    background-color: black;
+    text-align: right;
+    margin: 0px;
+    border-bottom: 1px solid #1FC600; 
+    /* opacity: .8; */
+}
+
+#login_error {
+    margin: auto;
+    border: 1px solid #1FC600;
+    color: red;
+    background: black;
+    width: 230px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#logout_success {
+    margin: auto;
+    border: 1px solid #1FC600;
+    color: #fdeca6;
+    background: black;
+    width: 230px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#session {
+    margin: auto;
+    border: 1px solid #1FC600;
+    color: red;
+    background: black;
+    width: 200px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#register {
+    margin: 70px auto;
+    border: 1px solid #1FC600;
+    background-color: black;
+    width: 300px;
+    padding: 10px;
+    top: 15%;
+    /* opacity: .9; */
+}
+
+#reg_submit {
+    display: block;
+    font-size: 15px;
+} 
+
+#reg_submit:hover, #guest_submit:hover, #login_submit:hover {
+    background-color: yellow;
+    color: green;
+}
+
+.notes {
+    color: gray;
+    font-size: 10px;
+    display: block;
+    text-align: left;
+    padding-left: 23%;
+}
+
+.fields {
+    color: red;
+}
+
+form {
+    color: #FFE37B;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input {
+    background-color: #d0ceb9;
+    margin: auto;
+    margin-top: 10px;
+    padding: 3px;
+    font-family: Expressway;
+    border: 1px solid #1FC600;
+}
+
+::-moz-placeholder {
+    font-style: italic;
+}
+
+.radio {
+    display: inline-block;
+}
+
+.success {
+    color: #1FC600;
+}
+
+#update {
+    background-color: black;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+#guest {
+    border-top: 1px solid gray;
+    text-align: center;
+    color: #FFE37B; 
+    padding-top: 30px;
+}
+
+#guest_submit {
+    font-size: 15px;
+}
+
+
+/***************** flex stuff *********************/
+
+#container {
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid #1FC600;
+    color: #FFE37B; 
+}
+
+#flex_container {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    justify-content: flex-start;
+    /* justify-content: space-around; */
+    align-content: stretch;                 /* stretches items on cross/y-axis to */
+    margin: auto;
+    /* flex-direction: row; */
+    flex-wrap: nowrap;                      /* 'wrap' will wrap other boxes to second row etc */
+}
+
+.item1 {
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid #1FC600;
+}
+
+.item2 {
+    padding: 10px;
+    margin: 3px;
+    flex-grow: 1;                          /* stretches items on main/x-axis. '1' indicate all have same width */
+    border: 1px solid #1FC600;
+    /* flex-basis: 33%;  */
+}
+
+.item3 {
+    padding: 10px;
+    margin: 3px;
+    flex-grow: 1;                          /* stretches items on main/x-axis. '1' indicate all have same width */
+    border: 1px solid #1FC600;
+    /* flex-basis: 33%;  */
+}
+
+.item4 {
+    padding: 10px;
+    margin: 3px;
+    flex-grow: 1;                          /* stretches items on main/x-axis. '1' indicate all have same width */
+    border: 1px solid #1FC600;
+    /* flex-basis: 33%;  */
+}
+
+.under {
+    /*text-decoration: underline;*/
+    background-color: #fdeca6;
+    font-family: 'Lucida Console';
+    font-size: 15px;
+    color: black;
+    padding: 3px;
+    box-shadow: 1px 1px 9px #fdeca6;
+    border: 2px solid black;
+}
